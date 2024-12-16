@@ -113,7 +113,7 @@ setInterval(() => {
 
         clearLcd();
         writeLcd("Christmas In:", 0);
-        writeLcd(`${days}d, ${hours}h, ${minutes}m ${seconds}s`, 1);
+        writeLcd(`${days}d,: ${hours}h ${minutes}m ${seconds}s`, 1);
     }
 }, 1000)
 
