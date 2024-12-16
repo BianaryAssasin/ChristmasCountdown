@@ -63,7 +63,7 @@ button.watch(async (err, value) => {
   } else {
     clearLcd();
     writeLcd("Christmas In:", 0);
-    writeLcd("00d, 00h, 00m 00s", 1)
+    writeLcd("00d 00h 00m 00", 1)
    red_led.writeSync(0);  
    isDeving = false;
 }
@@ -72,7 +72,7 @@ button.watch(async (err, value) => {
 function start() {
     clearLcd();
     writeLcd("Christmas In:", 0);
-    writeLcd("00d, 00h, 00m, 00s", 1)
+    writeLcd("00d 00h 00m 00s", 1)
 }
 start();
 
@@ -113,7 +113,7 @@ setInterval(() => {
 
         clearLcd();
         writeLcd("Christmas In:", 0);
-        writeLcd(`${days}d, ${hours}h, ${minutes}m, ${seconds}s`, 1);
+        writeLcd(`${days}d ${hours}h ${minutes}m ${seconds}s`, 1);
     }
 }, 1000)
 
