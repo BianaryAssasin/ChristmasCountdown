@@ -17,6 +17,7 @@ segmentDisplay.set(6, new gpio(27, 'out')); // 27
 segmentDisplay.set(7, new gpio(19, 'out')); // 19
 
 const nums = new Map();
+nums.set(0, [0, 1, 1, 1, 1, 1, 1, 0]);
 nums.set(1, [0, 1, 0, 0, 1, 0, 0, 0]);
 nums.set(2, [1, 0, 1, 1, 1, 1, 0, 0])
 nums.set(3, [1, 1, 1, 0, 1, 1, 0, 0]);
